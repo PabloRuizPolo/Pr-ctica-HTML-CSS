@@ -1,6 +1,6 @@
 
 .banner {
-    height: 50dvh;
+    height: 89dvh;
     width: 100%;
     position: relative;
     display: flex;
@@ -24,3 +24,53 @@
     z-index: 1;
 }
 
+
+.yo {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1120px;
+}
+.card {
+    height: 42dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mi__card {
+    position: relative;
+       height: 77%;
+       width: 70%;
+       max-width: 335px;
+       padding: 3px;
+       margin: 10% 20%;
+       border: 3px solid rgba(104, 6, 125, 0.476);
+       border-radius: 10px;
+       background-color: blueviolet;
+       opacity: 0.9;
+}
+.mi__foto {
+    position: relative;
+    width: 100%;
+}
+.card .mi__card .mi__foto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .mi__card .mi__descripcion p {
+    text-align: center;
+    padding: 1% 2%;
+    font-style: italic;
+    font-family: fantasy;
+}
+
+.texto__mis__skills {
+    text-align: center;
+}
+.mis__skills {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 13px;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <header class="header">
@@ -17,13 +18,13 @@
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__list__item">
-                    <a class="btn" href="#yo">Yo</a>
+                    <a class="btn" href="#mi__card">Yo</a>
                 </li>
                 <li class="menu__list__item">
                     <a class="btn" href="">Galeria</a>
                 </li>
                 <li class="menu__list__item">
-                    <a class="btn" href="">Contacto</a>
+                    <a class="btn" href="#contact">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -47,25 +48,79 @@
                     </div>
                 </div>
             </section> 
-            <section>
+            <section class="section__mis__skills">
                 <h1 class="texto__mis__skills">Mis Skills</h1>
                 <ul class="mis__skills">
-                    <li>Habilidad 1</li>
-                    <progress max="100" value="50"></progress>
-                    <li>Habilidad 2</li>
-                    <progress max="100" value="50"></progress>
-                    <li>Habilidad 3</li>
-                    <progress max="100" value="50"></progress>
-                    <li>Habilidad 4</li>
-                    <progress max="100" value="50"></progress>
-                    <li>Habilidad 5</li>
-                    <progress max="100" value="50"></progress>
-                    <li>Habilidad 6</li>
-                    <progress max="100" value="50"></progress>
+                    <li>Disparo en movimiento</li>
+                    <progress max="100" value="99"></progress>
+                    <li>Poca visibilidad</li>
+                    <progress max="100" value="85"></progress>
+                    <li>Paciencia</li>
+                    <progress max="100" value="82"></progress>
+                    <li>Acuático</li>
+                    <progress max="100" value="92"></progress>
+                    <li>Creativo</li>
+                    <progress max="100" value="90"></progress>
+                    <li>Camuflaje</li>
+                    <progress max="100" value="88"></progress>
                 </ul>
             </section>
         </section> 
-        <section class="formulario"></section>
+        <section class="formulario">
+            <div class="card__form">
+                <div class="contact" id="contact">
+                    <h2>Contacto</h2>
+                </div>
+                <form method="get">
+                    <div class="form__element">
+                        <label class="form__label" for="email">Mail</label>
+                        <input class="form__input" type="email" id="email" name="email" placeholder="tucorreo@gmail.com" >
+                    </div>
+                    <div class="form__element">
+                        <label class="form__label" for="name">Nombre</label>
+                        <input class="form__input" type="text" name="name" id="name" placeholder="tu Nombre">
+                    </div>
+                    <div class="form__element">
+                        <label class="form__label" for="surname">Apellidos</label>
+                        <input class="form__input" type="text" name="surname" id="surname" placeholder="tu Apellido">
+                    </div>
+                    <div class="form__element">
+                        <label class="form__label" for="tlfn">Teléfono</label>
+                        <input class="form__input" type="number" name="tlfn" id="tlfn" placeholder="tu nº Teléfono">
+                    </div>
+                    <fieldset class="form__element">
+                        <legend>¿Cómo me conosciste?</legend>
+                        <div class="form__element__radio__list">
+                            <label for="uni">Universidad</label>
+                            <input  type="radio" name="como?" id="uni">
+                            <label  for="revista">Revista</label>
+                            <input  type="radio" name="como?" id="revista">
+                            <label  for="google">Google</label>
+                            <input type="radio" name="como?" id="google">
+                            <label for="otro">Otro</label>
+                            <input type="radio" name="como?" id="otro">                      
+                        </div>
+                    </fieldset>
+                    <div class="form__element">
+                        <label class="form__label" for="rrss">Introduce tu rrss</label>
+                        <input class="form__input" type="text" name="rrss" id="rrss" placeholder="@usuario de rrss" >
+                    </div>
+                    <div class="newsletter">
+                        <label class="form__label" for="newsletter"></label>Subscribirte a nuestra newsletter</label>
+                        <input class="form__input" type="checkbox" name="newsletter" id="newsletter" value="selected" checked>
+                    </div>
+                    <div class="form__element">
+                        <label class="form__label" for="info">Más información</label>
+                        <textarea class="form__input" name="info" id="info" maxlength="180" placeholder="Máximo 180 caracteres"></textarea>
+                    </div>
+                    <div class="form__element__btn">
+                        <input class="btn" type="reset" value="Reset">
+                        <input class="btn" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            
+        </section>
     </main>
     <footer>
         <img src="" alt="">

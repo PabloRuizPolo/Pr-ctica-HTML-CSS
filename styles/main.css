@@ -17,6 +17,7 @@
     background-image: url(../recursos/whale-1118876_1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0.8;    
 }
 
 .banner__content {
@@ -27,8 +28,15 @@
 
 .yo {
     width: 90%;
-    margin: 0 auto;
+    margin: 0px auto;
     max-width: 1120px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(17, 51, 3, 0.82);
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
 }
 .card {
     height: 42dvh;
@@ -43,10 +51,10 @@
        width: 70%;
        max-width: 335px;
        padding: 3px;
-       margin: 10% 20%;
+       margin: 7% 19%;
        border: 3px solid rgba(104, 6, 125, 0.476);
        border-radius: 10px;
-       background-color: blueviolet;
+       background-color: #efaf55;
        opacity: 0.9;
 }
 .mi__foto {
@@ -65,12 +73,65 @@
     font-family: fantasy;
 }
 
+
+.section__mis__skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .texto__mis__skills {
     text-align: center;
+    margin-bottom: 0px;
+    background-color: #000000e0;
+    border-radius: 50%;
+    border: 3px solid green;
 }
 .mis__skills {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 13px;
+    padding-left: 0px;
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 10px;
+}
+.mis__skills progress {
+    border-radius: 50%;
+    margin-top: -8px;
+    padding: 3px;
+    background-color: #00bfff;
+}
+
+@media (width > 767px ) {
+    .section__mis__skills {
+        font-size: 1.3rem;
+    }
+    .mis__skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .mis__skills progress {
+        margin-top: 0px;
+    }
+}
+@media (width > 1020px ) {
+    .yo{
+        font-size: 1.4rem;
+    }
+    .mi__card {
+        height: 65%;
+    }
+    .mis__skills {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 36px;
+        padding: 18px;
+        margin: 22px 30%;
+    }
+    .mi__descripcion {
+        padding-top: 16px;
+    }
 }

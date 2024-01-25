@@ -1,6 +1,6 @@
 
 :root {
-    background-color: #F9E5FB  ;
+    background-color: hsla(95, 86%, 14%, 0.812)  ;
     font-size: 1rem;
     color: black;
     font-family: sans-serif;
@@ -8,7 +8,7 @@
 }
 
 .btn {
-    color: blueviolet;
+    color: blueviolet ;
     background-color: #F9E5FB;
     border: 1px solid black;
     border-radius: 6px;
@@ -17,3 +17,4 @@
     font-size: 80%;
     cursor: pointer;
 }
+

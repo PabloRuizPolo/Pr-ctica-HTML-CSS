@@ -1,6 +1,6 @@
 
 :root {
-    background-color: hsla(95, 86%, 14%, 0.812)  ;
+    background-color: #000  ;
     font-size: 1rem;
     color: black;
     font-family: sans-serif;
@@ -18,3 +18,13 @@
     cursor: pointer;
 }
 
+@media (width > 767px) {
+    .btn {
+        font-size: 1.1rem;
+    }
+}
+@media (width > 1020px) {
+    .btn {
+        font-size: 1.5rem;
+    }
+}

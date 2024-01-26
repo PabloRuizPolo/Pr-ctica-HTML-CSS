@@ -1,6 +1,5 @@
 
 .formulario{
-    background-color: rgba(17, 51, 3, 0.82);
     padding-top: 5px;
 }
 .card__form {
@@ -41,4 +40,25 @@
 }
 .form__element__btn {
     display: block;
+}
+
+@media (width > 767px) {
+    .formulario form {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        padding: 7%;
+    }
+    .formulario .newsletter {
+        display: block;
+    }
+}
+@media (width > 1020px) {
+    .formulario {
+        font-size: 1.5rem;
+    }
+    .formulario .form__element textarea {
+        width: 379px;
+        height: 100px;
+        max-width: 100%;
+    }
 }

@@ -24,7 +24,16 @@
     text-align: center;
     z-index: 1;
 }
-
+@media (width > 767px) {
+    .banner__content {
+        font-size: 1.5rem;
+    }
+}
+@media (width > 1020px) {
+    .banner__content {
+        font-size: 2rem;
+    }
+}
 
 .yo {
     width: 90%;
@@ -37,6 +46,8 @@
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 10px;
+    background: rgb(8,10,7);
+    background: radial-gradient(circle, rgba(8,10,7,0.6727065826330532) 16%, rgba(36,87,7,0.9612219887955182) 37%, rgba(210,152,41,1) 42%, rgba(0,191,255,1) 98%);
 }
 .card {
     height: 42dvh;
@@ -52,7 +63,7 @@
        max-width: 335px;
        padding: 3px;
        margin: 7% 19%;
-       border: 3px solid rgba(104, 6, 125, 0.476);
+       border: 3px solid rgba(0,191,255,1);
        border-radius: 10px;
        background-color: #efaf55;
        opacity: 0.9;

@@ -1,8 +1,10 @@
 .header {
-    background-color: #F9E5FB;
+    background: rgb(8,10,7);
+    background: radial-gradient(circle, rgba(8,10,7,1) 16%, rgba(36,87,7,0.9612219887955182) 37%, rgba(210,152,41,1) 42%, rgba(0,191,255,1) 98%);   
     height: 26px;
     position: sticky;
     z-index: 10;
+    border-radius: 5px;
     top: 0px;
     padding: 0.7em;
     display: flex;
@@ -28,6 +30,12 @@
 }
 .menu .menu__list .menu__list__item a {
     text-decoration: none;
+}
+
+@media (width < 767px) {
+    .header {
+        height: 14px;
+    }
 }
 
 

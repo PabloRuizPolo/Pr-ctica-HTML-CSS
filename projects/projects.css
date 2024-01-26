@@ -1,0 +1,26 @@
+.video__ban {
+    background-color: black;
+    height: 51dvh;
+    width: 98%;
+    margin: 10% 1%;
+}
+.video__ban video {
+    object-position: center;
+    width: 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.projects {
+    background-color: blue;
+}
+section {
+    margin-bottom: 5px;
+ }
+.project__list {
+    list-style: none;
+}
+.projects .project__list img {
+    width: 100%;
+}

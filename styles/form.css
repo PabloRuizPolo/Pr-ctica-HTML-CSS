@@ -13,6 +13,9 @@
     margin-top: 5px;
     border-radius: 10px;
 }
+.contact {
+    color: white;
+}
 .formulario form {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -27,8 +30,12 @@
 
 .form__element label, input {
     display: inline-block;
+    width: 53%;
 }
-
+.newsletter .check {
+    width: 5%;
+    margin-right: 37px;
+}
 .formulario .form__element textarea {
     width: 239px;
     height: 100px;
@@ -40,6 +47,7 @@
 }
 .form__element__btn {
     display: block;
+    max-width: max-content;
 }
 
 @media (width > 767px) {
@@ -50,6 +58,9 @@
     }
     .formulario .newsletter {
         display: block;
+    }
+    .form__element label, input {
+        width: 90%;
     }
 }
 @media (width > 1020px) {

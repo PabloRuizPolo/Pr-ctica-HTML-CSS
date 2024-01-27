@@ -18,6 +18,8 @@
 .header .header__logo img {
     width: 100%;
     border-radius: 50%;
+    padding-top: 4px;
+        
 }
 
 .menu__list {
@@ -37,5 +39,9 @@
         height: 14px;
     }
 }
-
+@media (width > 767px) {
+    .menu__list__item {
+        font-size: 0.5rem;
+    }
+}
 

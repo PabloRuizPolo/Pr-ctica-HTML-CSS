@@ -12,17 +12,24 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    margin: 0 auto;    
-    opacity: 0.4;
-    background-image: url(../recursos/whale-1118876_1280.jpg);
+    margin: 0 auto;
+    background-image: url(../recursos/abstract-2432362_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;    
+    opacity: 0.8;   
 }
 
 .banner__content {
     text-align: center;
     z-index: 1;
+    color: white;
+    margin-top: -29%;
+}
+@media (width > 523px) {
+    .banner__img {
+        background-image: url(../recursos/whale-1118876_1280.jpg);
+        width: 100%;
+    }
 }
 @media (width > 767px) {
     .banner__content {
@@ -57,16 +64,14 @@
 
 }
 .mi__card {
-    position: relative;
-       height: 77%;
-       width: 70%;
-       max-width: 335px;
-       padding: 3px;
-       margin: 7% 19%;
-       border: 3px solid rgba(0,191,255,1);
-       border-radius: 10px;
-       background-color: #efaf55;
-       opacity: 0.9;
+    position: absolute;
+    max-width: 335px;
+    padding: 3px;
+    margin: 7% 19%;
+    border: 3px solid rgba(0,191,255,1);
+    border-radius: 10px;
+    background-color: #efaf55;
+    opacity: 0.9;
 }
 .mi__foto {
     position: relative;
@@ -75,6 +80,7 @@
 .card .mi__card .mi__foto img {
     width: 100%;
     border-radius: 10px;
+    max-width: 335px;
 }
 
 .card .mi__card .mi__descripcion p {
@@ -115,6 +121,15 @@
     margin-top: -8px;
     padding: 3px;
     background-color: #00bfff;
+    animation: progress-animation 1s linear;
+}
+@keyframes progress-animation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 77%;
+    }
 }
 
 @media (width > 767px ) {
@@ -133,9 +148,7 @@
     .yo{
         font-size: 1.4rem;
     }
-    .mi__card {
-        height: 65%;
-    }
+    
     .mis__skills {
         grid-template-columns: repeat(4, 1fr);
         gap: 36px;
@@ -145,4 +158,8 @@
     .mi__descripcion {
         padding-top: 16px;
     }
+    form {
+        font-size: 1.3rem;
+    }
 }
+

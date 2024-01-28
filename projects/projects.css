@@ -1,6 +1,6 @@
 .video .video__text{
     color: white;
-    padding: 6% 4%;
+    padding: 1% 4%;
     font-size: 0.9rem;
     padding-bottom: 0px;
 }
@@ -13,10 +13,17 @@
     width: 100%;
     margin: 0;
 }
+
+@media (width > 438px) {
+    .video__ban {
+        height: 42dvh;
+    }
+}
 .video__ban video {
     object-position: center;
     width: 100%;
     position: absolute;
+    max-height: 363px;
 }
 .control__projects {
     display: flex;

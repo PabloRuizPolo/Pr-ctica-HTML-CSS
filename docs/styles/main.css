@@ -1,4 +1,15 @@
 
+.menu_btn {
+    transition: transform 0.5s ease-in-out;
+}
+
+
+@media (hover:hover) {
+    .menu_btn:hover {
+        transform: rotate(360deg);
+    }
+}
+
 .banner {
     height: 89dvh;
     width: 100%;
@@ -121,7 +132,7 @@
     margin-top: -8px;
     padding: 3px;
     background-color: #00bfff;
-    animation: progress-animation 1s linear;
+    animation: progress-animation 3s linear;
 }
 @keyframes progress-animation {
     0% {
